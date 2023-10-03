@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table class="calculator" >
+        <tr>
+            <td colspan="4"> <input class="display-box" type="text" id="result" placeholder='Shut up and do it' disabled> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="√x" onclick='squareRoot()'> </td>
+            <td> <input type="button" value="x²" onclick='square()'> </td>
+            <td> <input type="button" value="C" onclick='clear()' id="clearButton"> </td>
+            <td> <input type="button" value="/" onclick="display('/')"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="七" onclick="display('7')" id="digit"> </td>
+            <td> <input type="button" value="八" onclick="display('8')" id="digit"> </td>
+            <td> <input type="button" value="九" onclick="display('9')" id="digit"> </td>
+            <td> <input type="button" value="*" onclick="display('*')"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="四" onclick="display('4')" id="digit"> </td>
+            <td> <input type="button" value="五" onclick="display('5')" id="digit"> </td>
+            <td> <input type="button" value="六" onclick="display('6')" id="digit"> </td>
+            <td> <input type="button" value="-" onclick="display('-')"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="一" onclick="display('1')" id="digit"> </td>
+            <td> <input type="button" value="二" onclick="display('2')" id="digit"> </td>
+            <td> <input type="button" value="三" onclick="display('3')" id="digit"> </td>
+            <td rowspan="2"> <input type="button" value="+" onclick="display('+')" id="plus"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="." onclick="display('.')"> </td>
+            <td> <input type="button" value="零" onclick="display('0')" id="digit"> </td>
+            <td> <input type="button" value="=" onclick="calculate()"> </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
